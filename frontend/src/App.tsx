@@ -1,13 +1,15 @@
 import { Button } from "./components/Button"
+import { Cards } from "./components/Cards"
 import { PlusIcon } from "./icons/PlusIcon"
+import { ShareIcon } from "./icons/ShareIcon"
 
 function App() {
   return (
-    <>
-    <Button startIcon={<PlusIcon/>} size="sm" variant="primary" text="Share"/>
-    <Button size="md" variant="secondary" text="Add Content"/>
-    <Button size="lg" variant="secondary" text="Add Content"/>
-    </>
+    <div>
+      <Button variant="primary" text="Add Content" startIcon={<PlusIcon/>}/>
+      <Button variant="secondary" text="Share Brain" startIcon={<ShareIcon/>}/>
+      <Cards/>
+    </div>
   )
 }
 
